@@ -1,2 +1,2 @@
 # CountriesList
-Example of MVVM+C + Moya + RxSwift + RxCocoa + EVReflection
+Example of MVVM-C + Moya + RxSwift + RxCocoa + EVReflection
