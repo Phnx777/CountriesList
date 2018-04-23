@@ -1,0 +1,55 @@
+PODS:
+  - Alamofire (4.7.2)
+  - EVReflection/Alamofire (5.6.1):
+    - Alamofire
+    - EVReflection/Core
+  - EVReflection/Core (5.6.1)
+  - EVReflection/Moya (5.6.1):
+    - EVReflection/Alamofire
+    - Moya
+  - EVReflection/MoyaRxSwift (5.6.1):
+    - EVReflection/Moya
+    - Moya/RxSwift
+  - Moya (11.0.2):
+    - Moya/Core (= 11.0.2)
+  - Moya/Core (11.0.2):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - Moya/RxSwift (11.0.2):
+    - Moya/Core
+    - RxSwift (~> 4.0)
+  - ReachabilitySwift (4.1.0)
+  - Result (3.2.4)
+  - RxCocoa (4.1.2):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.1.2)
+
+DEPENDENCIES:
+  - EVReflection/MoyaRxSwift
+  - Moya
+  - ReachabilitySwift
+  - RxCocoa
+  - RxSwift
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - EVReflection
+    - Moya
+    - ReachabilitySwift
+    - Result
+    - RxCocoa
+    - RxSwift
+
+SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  EVReflection: d05ebbafc851b7a4cd3d625182662463a5819ab8
+  Moya: a725035953bc1c0eb1be505ab903984501d82440
+  ReachabilitySwift: 6849231cd4e06559f3b9ef4a97a0a0f96d41e09f
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
+  RxSwift: e49536837d9901277638493ea537394d4b55f570
+
+PODFILE CHECKSUM: 6a9ec0ba5c7f90a97a7dd4dece0b97dead64bccf
+
+COCOAPODS: 1.5.0
