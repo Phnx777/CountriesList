@@ -56,13 +56,14 @@ class CountriesViewController: UIViewController {
     }
     
     @objc func networkStatusChanged(_ notification: Notification) {
-        if let reachability = notification.object as? Reachability,
-            reachability.connection == .none {
-            if viewModel.isEmpty {
-                 showAlert("Ooops!", message: "Lost connection(")
-            } else {
-                showAlert("Ooops! Lost connection(",
-                          message: "But don't worry. You can work with cashed data")
+        if let reachability = notification.object as? Reachability {
+            switch reachability.connection {
+            case .cellular:
+                viewModel.requestAllCountries()
+            case .wifi:
+                viewModel.requestAllCountries()
+            case .none:
+                showAlert("Ooops!", message: "Lost connection(")
             }
         }
     }

@@ -52,10 +52,6 @@ final class CountriesViewModel : CountriesViewModelType {
         }
     }
     
-    var isEmpty: Bool {
-        return countriesVariable.value.count > 0 
-    }
-    
     var updateLoadingStatus: (()->())?
     var reloadTableView: (()->())?
     
